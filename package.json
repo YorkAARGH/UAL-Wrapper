@@ -1,0 +1,33 @@
+{
+  "name": "ual-wrapper",
+  "version": "1.0.0",
+  "description": "An API Wrapper for the unofficial Azur Lane API.",
+  "main": "src/index.js",
+  "types": "typings/index.d.ts",
+  "scripts": {
+    "test": "eslint src && tslint 'typings/*.ts'",
+    "lint": "eslint --fix src test && tslint --fix 'typings/*.ts'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YorkAARGH/UAL-Wrapper.git"
+  },
+  "author": "York",
+  "contributors": [
+    "Kyra"
+  ],
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/YorkAARGH/UAL-Wrapper/issues"
+  },
+  "homepage": "https://github.com/YorkAARGH/UAL-Wrapper#readme",
+  "dependencies": {
+    "node-fetch": "^2.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^10.1.2",
+    "eslint": "^4.19.1",
+    "tslint": "^5.10.0",
+    "typescript": "^2.8.3"
+  }
+}
