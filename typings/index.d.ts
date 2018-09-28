@@ -2,23 +2,23 @@ declare module "ual-wrapper" {
 
 //#region classes
 
-    export const version: string;
-    export class AzurLaneClient {
-        public baseUrl: string;
+	export const version: string;
+	export class AzurLaneClient {
+		public baseUrl: string;
 
-        /* Image Generators */
-        public card(name: string): Promise<Buffer>;
+		/* Image Generators */
+		public card(name: string): Promise<Buffer>;
 
-        /* Text */
+		/* Text */
 		public detailed(value: string | number): Promise<DetailedData[]>;
-        public brief(value: string | number): Promise<BriefData[]>;
+		public brief(value: string | number): Promise<BriefData[]>;
 		public direct(name: string): Promise<DetailedData>;
 		public embed(name: string): Promise<EmbedData>;
 
-        /* Private */
-        private _get(endpoint: string, query?: [string, string | number | null][]): Promise<Buffer | { [k: string]: any }>;
+		/* Private */
+		private _get(endpoint: string, query?: [string, string | number | null][]): Promise<Buffer | { [k: string]: any }>;
 
-    }
+	}
 
 	export { AzurLaneClient as Client };
 
