@@ -27,20 +27,20 @@ class AzurLaneClient {
 
   /**
    * Detailed Info Search
-   * @param {string} name The name of the ship you want detailed information on.
+   * @param {string} search The name of the ship you want detailed information on.
    * @returns {Promise<Buffer>}
    */
-  detailed(name) {
-    return this._get("shipyard/ship_info_detailed", [["name", name]]);
+  detailed(search) {
+    return this._get("shipyard/ship_info_detailed", [["search", search]]);
   }
 
   /**
    * Brief Info Search
-   * @param {string} name The name of the ship you want brief information on.
+   * @param {string} search The name of the ship you want brief information on.
    * @returns {Promise<Buffer>}
    */
-  brief(name) {
-    return this._get("shipyard/ship_info_brief", [["name", name]]);
+  brief(search) {
+    return this._get("shipyard/ship_info_brief", [["search", search]]);
   }
 
   /**
